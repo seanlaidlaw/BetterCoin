@@ -16,12 +16,13 @@
 <header class="flex-container">
     <div>
         <a href="#default" class="name" style="font-weight: bold;">BetterCoin</a>
+        <p>Like The Silk Road, but boring</p>
     </div>
 
     <div class="search-container" method='get'>
         <form action="index.php">
             <input id="searchbar" type="text" name="motcle" placeholder="Rechercher..">
-            <input type="submit" value="Rechercher">
+            <input id="searchbar_button" class="button" type="submit" value="Rechercher">
         </form>
     </div>
     
@@ -29,7 +30,7 @@
         <form action="/connecter.php" method="get">
             <input type="text" id="fname" name="pseudonyme" placeholder="Pseudo">
             <input type="text" id="lname" name="motdepasse" placeholder="Mot de Passe">
-            <input type="submit" value="Connecter">
+            <input type="submit" class="button" id="login_button" value="Connecter">
         </form> 
     </div>
 

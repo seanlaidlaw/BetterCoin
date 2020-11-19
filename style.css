@@ -8,14 +8,20 @@ body {
     background-color: teal;
     text-align: center;
     text-align: center;
-    line-height: 25px;
-    padding: 12px;
-    font-size: 32px;
-}
-
-header a {
+    padding: 10px
+  }
+  
+  header a {
     color: #fff;
+    font-size: 32px;
     text-decoration: none;
+  }
+
+  header p {
+    margin-top: 3px;
+    font-size: 11pt;
+    font-style: italic;
+    color: gainsboro;
   }
   
   .flex-container {
@@ -23,6 +29,7 @@ header a {
     text-align: center;
     list-style: none;
     align-items: center;
+    justify-content: space-between;
   }
   
   @media only screen and (min-width: 600px) {
@@ -30,10 +37,32 @@ header a {
   }
   @media only screen and (max-width: 600px) {
     .flex-container {flex-direction: column;}
+    #searchbar {width: 100%;}
+    #searchbar_button {width: 100%;}
+    #fname {width: 100%;}
+    #lname {width: 100%;}
+    #login_button {width: 100%;}
+    .search-container {width: 100%;}
+    #login {width: 100%;}
+    
   }
-  
+  input[type=text] {
+    padding: 7px 20px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: 2px solid teal;
+    border-radius: 4px;
+  }
+
+  .button {
+    background-color: #4caf86;
+    border: none;
+    color: white;
+    padding: 6px 32px;
+    margin: 2px;
+  }
   .flex-container > div {
-    padding: 20px;
+    padding: 5px
   }
   .annonce { 
     padding: 1px 15px 15px 15px; 
@@ -70,11 +99,6 @@ header a {
     font-size: 1rem;
     font-weight: normal;
   }
-
-  #login {
-  float:right;
-  }
-
 
   #page-container {
     position: relative;
