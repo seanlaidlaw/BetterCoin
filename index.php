@@ -23,6 +23,7 @@
         <form action="index.php">
             <input id="searchbar" type="text" name="motcle" placeholder="Rechercher..">
             <input id="searchbar_button" class="button" type="submit" value="Rechercher">
+            <button class="button button-alt">Créer</button>
         </form>
     </div>
     
@@ -31,6 +32,7 @@
             <input type="text" id="fname" name="pseudonyme" placeholder="Pseudo">
             <input type="text" id="lname" name="motdepasse" placeholder="Mot de Passe">
             <input type="submit" class="button" id="login_button" value="Connecter">
+            <button class="button button-alt">S'inscrire</button>
         </form> 
     </div>
 

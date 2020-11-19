@@ -37,13 +37,9 @@ body {
   }
   @media only screen and (max-width: 600px) {
     .flex-container {flex-direction: column;}
-    #searchbar {width: 100%;}
-    #searchbar_button {width: 100%;}
-    #fname {width: 100%;}
-    #lname {width: 100%;}
-    #login_button {width: 100%;}
+    button {width: 100%;}
+    input {width: 100%;}
     .search-container {width: 100%;}
-    #login {width: 100%;}
     
   }
   input[type=text] {
@@ -58,9 +54,15 @@ body {
     background-color: #4caf86;
     border: none;
     color: white;
-    padding: 6px 32px;
+    padding: 6px 9px;
     margin: 2px;
   }
+
+  .button-alt {
+    background-color: #af4c75;
+    padding: 6px 7px;
+  }
+
   .flex-container > div {
     padding: 5px
   }
