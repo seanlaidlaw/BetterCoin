@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BetterCoin - Creer une annonce</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Like The Silk Road, but boring">
+</head>
+<body>
+<div id="page-container">
+<div id="content-wrap">
+    
+<header class="flex-container">
+    <div>
+        <a href="#default" class="name" style="font-weight: bold;">BetterCoin</a>
+        <p>Like The Silk Road, but boring</p>
+    </div>
+
+    <div class="search-container" method='get'>
+        <form action="index.php">
+            <input id="searchbar" type="text" name="motcle" placeholder="Rechercher..">
+            <input id="searchbar_button" class="button" type="submit" value="Rechercher">
+            <button class="button button-alt">Créer</button>
+        </form>
+    </div>
+    
+    <div id="login">
+        <form action="/connecter.php" method="get">
+            <input type="text" id="fname" name="pseudonyme" placeholder="Pseudo">
+            <input type="text" id="lname" name="motdepasse" placeholder="Mot de Passe">
+            <input type="submit" class="button" id="login_button" value="Connecter">
+            <button class="button button-alt">S'inscrire</button>
+        </form> 
+    </div>
+
+</header>
+      
+
+
+
+<div class="annonce-list">
+<h1>Créer une nouvelle annonce</h1>
+<div class="form-container">
+    <form action="/connecter.php" method="get">
+        <label for="titre">Titre de l'annonce</label><br>
+        <input type="text" name="titre" placeholder="Âme de Faust à vendre, pas cher"><br><br>
+        <label for="description">Description de l'annonce</label><br>
+        <input type="text" name="description" placeholder="vends mon âme car envie de me liberer d'insatisfaction de la vie"><br><br>
+        <label for="categorie">Categorie de l'annonce</label><br>
+        <input type="text" name="categorie" placeholder="Surnaturel"><br><br>
+        <label for="prix">Prix</label><br>
+        <input type="text" name="prix" placeholder="1000"><br><br>
+        <label for="rdv_lat">Latitude GPS du rendez-vous</label><br>
+        <input type="text" name="rdv_lat" placeholder="51°20′25″N"><br><br>
+        <label for="rdv_lon">Longitude GPS du rendez-vous</label><br>
+        <input type="text" name="rdv_lon" placeholder="12°22′29″E"><br><br>
+        <label for="photo">Photo de l'annonce (soit telecharger fichier soit fournir URL)</label><br>
+        <input type="file" name="photo"><br>
+        <input type="text" name="photo_url" placeholder="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Sergei_Prokudin-Gorskii_-_Feodor_Chaliapin_as_Mephisto.jpg/340px-Sergei_Prokudin-Gorskii_-_Feodor_Chaliapin_as_Mephisto.jpg"><br><br>
+        <input type="submit" class="button button-alt" value="Creer Annonce">
+    </form> 
+</div>
+
+</div> <!-- annonce-list -->
+
+<footer id="footer">
+    <p>Copyright 2020</p>
+    <p> Sean Laidlaw & Claudia Restrepo-Ortiz</p>
+    <p>Université de Montpellier</p>
+</footer>
+
+</div> <!-- content-wrap -->
+</div> <!-- page-container -->
+</body>
+</html> 
