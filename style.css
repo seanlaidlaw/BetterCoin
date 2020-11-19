@@ -64,6 +64,8 @@ body {
     color: white;
     padding: 6px 9px;
     margin: 2px;
+    font-size: 10pt;
+    display: inline-block;
   }
 
   .button-alt {
