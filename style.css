@@ -28,6 +28,40 @@ header a {
   .flex-container > div {
     padding: 20px;
   }
+  .annonce { 
+    padding: 1px 15px 15px 15px; 
+    margin-top: 2em;
+    border-radius: 0.25rem;
+    -webkit-box-shadow: -17px 17px 30px -10px rgba(0,0,0,0.1);
+    -moz-box-shadow: -17px 17px 30px -10px rgba(0,0,0,0.1);
+    box-shadow: -17px 17px 30px -10px rgba(0,0,0,0.1);
+    border-color:teal;
+    border-style:solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .annonce  h4{
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .annonce  p{
+    font-size: 1rem;
+    color: #030030;
+  }
+
+  .annonce-list {
+    margin-left: 0.5em;
+  }
+
+  #category {
+    color:teal;
+    font-size: 1rem;
+    font-weight: normal;
+  }
 
   #login {
   float:right;
@@ -39,7 +73,7 @@ header a {
     min-height: 100vh;
   }
   #content-wrap {
-    padding-bottom: 150px;    /* Footer height */
+    padding-bottom: 200px;    /* Footer height */
   }
   
   #footer {

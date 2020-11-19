@@ -6,8 +6,10 @@
         <title>BetterCoin - Accueil</title>
         <link rel="stylesheet" href="style.css">
         <meta name="description" content="Like The Silk Road, but boring">
-</head>
-<body>
+    </head>
+    <body>
+            <?php require_once("GererAnnonces.php"); ?>
+            <?php require_once("bdd.php"); ?>
 <div id="page-container">
 <div id="content-wrap">
     
@@ -16,15 +18,15 @@
         <a href="#default" class="name" style="font-weight: bold;">BetterCoin</a>
     </div>
 
-    <div class="search-container"">
-        <form action="/rechercher.php">
+    <div class="search-container" method='get'>
+        <form action="index.php">
             <input id="searchbar" type="text" name="motcle" placeholder="Rechercher..">
             <input type="submit" value="Rechercher">
         </form>
     </div>
     
     <div id="login">
-        <form action="/connecter.php">
+        <form action="/connecter.php" method="get">
             <input type="text" id="fname" name="pseudonyme" placeholder="Pseudo">
             <input type="text" id="lname" name="motdepasse" placeholder="Mot de Passe">
             <input type="submit" value="Connecter">
@@ -35,9 +37,23 @@
       
 
 
-<h1 style=" margin-left: 10px;">Annonces:</h1>
 
+<div class="annonce-list">
+<h1>Annonces: <?php echo $_GET["motcle"]; ?> </h1>
 
+<?php
+$db = new SQLite3('annonces.db');
+$res = $db->query('SELECT * FROM annonces');
+
+while ($row = $res->fetchArray()) {
+    echo '<div class="annonce">';
+    echo "  <h4 style='margin: 0;'>{$row['titre']} <span id='category'>[{$row['categorie']}]</span></h4>";
+    echo "  <div id=annonce-prix>{$row['prix']} €</div>";
+    echo "  <span>{$row['description']}</span>";
+    echo '</div>';
+}
+?>
+</div> <!-- annonce-list -->
 
 <footer id="footer">
     <p>Copyright 2020</p>
