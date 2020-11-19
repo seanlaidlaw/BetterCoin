@@ -11,31 +11,8 @@
 <div id="page-container">
 <div id="content-wrap">
     
-<header class="flex-container">
-    <div>
-        <a href="#default" class="name" style="font-weight: bold;">BetterCoin</a>
-        <p>Like The Silk Road, but boring</p>
-    </div>
-
-    <div class="search-container" method='get'>
-        <form action="index.php">
-            <input id="searchbar" type="text" name="motcle" placeholder="Rechercher..">
-            <input id="searchbar_button" class="button" type="submit" value="Rechercher">
-            <button class="button button-alt">Créer</button>
-        </form>
-    </div>
-    
-    <div id="login">
-        <form action="/connecter.php" method="get">
-            <input type="text" id="fname" name="pseudonyme" placeholder="Pseudo">
-            <input type="text" id="lname" name="motdepasse" placeholder="Mot de Passe">
-            <input type="submit" class="button" id="login_button" value="Connecter">
-            <button class="button button-alt">S'inscrire</button>
-        </form> 
-    </div>
-
-</header>
-      
+<!-- header is same every page, avoid duplicates in each page by importing same code each time -->
+<?php include 'header.html';?>
 
 
 
@@ -64,11 +41,9 @@
 
 </div> <!-- annonce-list -->
 
-<footer id="footer">
-    <p>Copyright 2020</p>
-    <p> Sean Laidlaw & Claudia Restrepo-Ortiz</p>
-    <p>Université de Montpellier</p>
-</footer>
+
+<!-- footer is same every page, avoid duplicates in each page by importing same code each time -->
+<?php include 'footer.html';?>
 
 </div> <!-- content-wrap -->
 </div> <!-- page-container -->
