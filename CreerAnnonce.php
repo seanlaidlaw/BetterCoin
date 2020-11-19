@@ -19,7 +19,7 @@
 <div class="annonce-list">
 <h1>Créer une nouvelle annonce</h1>
 <div class="form-container">
-    <form action="/connecter.php" method="get">
+    <form action="/postAjoutAnnonce.php" method="get">
         <label for="titre">Titre de l'annonce</label><br>
         <input type="text" name="titre" placeholder="Âme de Faust à vendre, pas cher"><br><br>
         <label for="description">Description de l'annonce</label><br>
