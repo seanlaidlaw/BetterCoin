@@ -94,7 +94,29 @@ body {
     border-style:solid;
     border-width: 1px;
     display: flex;
+    justify-content: space-between;
+  }
+  .annonce-title-description-pseudo {
+    flex-grow: 2;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .annonce-img-prix-coord {
+    flex-grow: 1;
+    text-align: right;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .annonce-prix {
+    padding-top: 8px;
+    font-weight: bold;
+  }
+
+  .annonce-prix p {
+    /* background-color: #008080; */
   }
 
   .annonce  h4{
@@ -111,6 +133,10 @@ body {
   .annonce-list {
     margin-left: 0.5em;
     margin-right: 0.5em;
+  }
+
+  .annonce-pseudo {
+    font-style: italic;
   }
 
   #category {
