@@ -14,6 +14,10 @@
 <!-- header is same every page, avoid duplicates in each page by importing same code each time -->
 <?php include 'header.html';?>
 
+<!-- menu sidebar is same every page, avoid duplicates in each page by importing same code each time -->
+<?php include 'sidebar.html';?>
+
+
 
 
 <!-- ajouter l'annonce et dire à l'utilisateur qu'il a été ajouté -->
