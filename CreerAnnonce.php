@@ -21,19 +21,18 @@
 <div class="form-container">
     <form action="/postAjoutAnnonce.php" method="get">
         <label for="titre">Titre de l'annonce</label><br>
-        <input type="text" name="titre" placeholder="Âme de Faust à vendre, pas cher"><br><br>
+        <input type="text" name="titre" placeholder="Âme de Faust à vendre, pas cher" autofocus required><br><br>
         <label for="description">Description de l'annonce</label><br>
         <input type="text" name="description" placeholder="vends mon âme car envie de me liberer d'insatisfaction de la vie"><br><br>
         <label for="categorie">Categorie de l'annonce</label><br>
         <input type="text" name="categorie" placeholder="Surnaturel"><br><br>
         <label for="prix">Prix</label><br>
-        <input type="text" name="prix" placeholder="1000"><br><br>
+        <input type="number" name="prix" placeholder="1000" required><br><br>
         <label for="rdv_lat">Latitude GPS du rendez-vous</label><br>
         <input type="text" name="rdv_lat" placeholder="51°20′25″N"><br><br>
         <label for="rdv_lon">Longitude GPS du rendez-vous</label><br>
         <input type="text" name="rdv_lon" placeholder="12°22′29″E"><br><br>
-        <label for="photo">Photo de l'annonce (soit telecharger fichier soit fournir URL)</label><br>
-        <input type="file" name="photo"><br>
+        <label for="photo_url">Photo de l'annonce (URL vers un image)</label><br>
         <input type="text" name="photo_url" placeholder="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Sergei_Prokudin-Gorskii_-_Feodor_Chaliapin_as_Mephisto.jpg/340px-Sergei_Prokudin-Gorskii_-_Feodor_Chaliapin_as_Mephisto.jpg"><br><br>
         <input type="submit" class="button button-alt" value="Creer Annonce">
     </form> 

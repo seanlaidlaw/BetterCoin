@@ -22,17 +22,13 @@
 $_GET['pseudo']="mypseudo";
 
 // replace empty variables with placeholder values to not cause SQL errors
-if(empty($_GET['titre'])){ $_GET['titre']="titre de l'annonce pas fourni";}
 if(empty($_GET['description'])){ $_GET['description']="description de l'annonce pas fourni";}
 if(empty($_GET['categorie'])){ $_GET['categorie']="sans-categorie";}
-if(empty($_GET['prix'])){ $_GET['prix']=0;}
-if(empty($_GET['photo'])){ $_GET['photo']="https://image.shutterstock.com/image-vector/silhouette-people-unknown-male-person-260nw-1372192277.jpg";} # photo pour monter qu'il y a pas de photo
-if(empty($_GET['rdv_lat'])){ $_GET['rdv_lat']="latitude pas fourni";}
-if(empty($_GET['rdv_lon'])){ $_GET['rdv_lon']="longitude pas fourni";}
+if(empty($_GET['photo_url'])){ $_GET['photo_url']="https://image.shutterstock.com/image-vector/silhouette-people-unknown-male-person-260nw-1372192277.jpg";} # photo pour monter qu'il y a pas de photo
 
 $db = new SQLite3('annonces.db');
 
-$queteSQLInsertion = "INSERT INTO annonces (titre, description, categorie, pseudo, prix) VALUES (\"{$_GET['titre']}\",\"{$_GET['description']}\",\"{$_GET['categorie']}\", \"{$_GET['pseudo']}\", {$_GET['prix']});";
+$queteSQLInsertion = "INSERT INTO annonces (titre, description, categorie, pseudo, prix, photo, rdv_lat, rdv_lon) VALUES (\"{$_GET['titre']}\",\"{$_GET['description']}\",\"{$_GET['categorie']}\", \"{$_GET['pseudo']}\", \"{$_GET['prix']}\", \"{$_GET['photo_url']}\", \"{$_GET['rdv_lat']}\", \"{$_GET['rdv_lon']}\");";
 
 $statement = $db->prepare($queteSQLInsertion);
 $statement->execute();
