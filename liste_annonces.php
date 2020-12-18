@@ -1,7 +1,7 @@
 <?php
 $db = new SQLite3('annonces.db');
 //  construire requete SQL pour rechercher mot dans titre ou dans description
-$sqlQueryStr = "SELECT * FROM annonces WHERE lower(titre) LIKE lower('%{$_GET[motcle]}%') OR lower(description) LIKE lower('%{$_GET[motcle]}%')";
+$sqlQueryStr = "SELECT * FROM annonces WHERE lower(titre) LIKE lower('%{$_GET[motcle]}%') OR lower(description) LIKE lower('%{$_GET[motcle]}%') OR lower(pseudo) LIKE lower('%{$_GET[motcle]}%') OR lower(categorie) LIKE lower('%{$_GET[motcle]}%')";
 // echo $sqlQueryStr; // debug SQL query
 $res = $db->query($sqlQueryStr);
 
