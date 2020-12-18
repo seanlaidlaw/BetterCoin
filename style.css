@@ -91,6 +91,10 @@ body {
     padding: 6px 7px;
   }
 
+  .deletebtn {
+    color: #af4c75;
+  }
+
   .flex-container > div {
     padding: 5px
   }

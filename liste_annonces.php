@@ -5,6 +5,7 @@ $sqlQueryStr = "SELECT * FROM annonces WHERE lower(titre) LIKE lower('%{$_GET[mo
 // echo $sqlQueryStr; // debug SQL query
 $res = $db->query($sqlQueryStr);
 
+
 while ($row = $res->fetchArray()) {
     echo '<div class="annonce">';
     echo "  <div class='annonce-title-description-pseudo'>";
@@ -12,7 +13,7 @@ while ($row = $res->fetchArray()) {
     echo "       <h4 style='margin: 0;'>{$row['titre']} <span id='category'>[{$row['categorie']}]</span></h4>";
     echo "       <div class='annonce-description'>{$row['description']}</div>";
     echo "    </div>";
-    echo "    <div class='annonce-pseudo'>{$row['pseudo']} — {$row['date']}</div>";
+    echo "    <div class='annonce-pseudo'>{$row['pseudo']} — {$row['date']} <a href='supprimer_annonce.php?id={$row['id']}' class='deletebtn'>Supprimer</a> </div>";
     echo "  </div>";
     echo "  <div class='annonce-img-prix-coord'>";
     echo "    <div class='annonce-img-prix'>";
