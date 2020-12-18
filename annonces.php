@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BetterCoin - Annonces</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="bettercoin.js"></script>
     <meta name="description" content="Like The Silk Road, but boring">
 </head>
 <body>
