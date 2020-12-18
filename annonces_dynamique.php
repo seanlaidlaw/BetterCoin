@@ -21,9 +21,12 @@
 
 
 <div class="annonce-list">
-<h1>Annonces : <?php echo $_GET["motcle"]; ?> </h1>
+<h1>Annonces Dyamique: <?php echo $_GET["motcle"]; ?> </h1>
 
-<?php include 'liste_annonces.php';?>
+<form>
+<input type="text" onkeyup="populateAnnonces(this.value)">
+<div id="searchdynamique"></div>
+</form>
 
 </div> <!-- annonce-list -->
 
