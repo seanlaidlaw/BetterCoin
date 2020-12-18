@@ -28,7 +28,7 @@
         <label for="titre">Titre de l'annonce</label><br>
         <input type="text" name="titre" placeholder="Âme de Faust à vendre, pas cher" autofocus required><br><br>
         <label for="description">Description de l'annonce</label><br>
-        <input type="text" name="description" placeholder="vends mon âme car envie de me liberer d'insatisfaction de la vie"><br><br>
+        <input type="text" name="description" placeholder=""><br><br>
         <label for="categorie">Categorie de l'annonce</label><br>
         <input type="text" name="categorie" placeholder="Surnaturel"><br><br>
         <label for="prix">Prix</label><br>

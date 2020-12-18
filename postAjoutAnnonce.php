@@ -42,16 +42,6 @@ $idoflastinsert = $db->lastInsertRowID();
 echo "<h1>Annonce Ajouté</h1><h2>Succes!</h2><p>Votre annonce a été ajouté avec l'identifiant : $idoflastinsert<p>";
 ?>
 
-<h2>Apperçu de votre annonce:</h2>
-<div class="annonce-list">
-<?php
-$row = $_GET;
-echo '<div class="annonce">';
-echo "  <h4 style='margin: 0;'>{$row['titre']} <span id='category'>[{$row['categorie']}]</span></h4>";
-echo "  <div id=annonce-prix>{$row['prix']} €</div>";
-echo "  <span>{$row['description']}</span>";
-echo '</div>';
-?>
 </div> <!-- annonce-list -->
 
 
