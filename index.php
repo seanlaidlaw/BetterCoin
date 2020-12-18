@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,9 +22,18 @@
 
 
 <div class="annonce-list">
-<h1>Index</h1>
 
+    
+<h1>Index</h1>
+    
 </div> <!-- annonce-list -->
+<?php 
+if (!empty($_SESSION['user'])) {
+    echo "<h4>Vous êtes connecté en tant que: {$_SESSION['user']}</h4>";
+} else {
+    echo "<h4>Vous n'êtes pas actuellement connecté</h4>";
+}
+?>
 
 <!-- footer is same every page, avoid duplicates in each page by importing same code each time -->
 <?php include 'footer.html';?>

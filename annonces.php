@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +22,13 @@
 
 
 <div class="annonce-list">
+<?php 
+if (!empty($_SESSION['user'])) {
+    echo "<h4>Vous êtes connecté en tant que: {$_SESSION['user']}</h4>";
+} else {
+    echo "<h4>Vous n'êtes pas actuellement connecté</h4>";
+}
+?>
 <h1>Annonces : <?php echo $_GET["motcle"]; ?> </h1>
 
 <?php include 'liste_annonces.php';?>
